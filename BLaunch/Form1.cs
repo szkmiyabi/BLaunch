@@ -24,6 +24,8 @@ namespace BLaunch
             statusBar.Text = "ファイルを選択してください...";
             //環境設定をロード
             loadAppSettings();
+            //imageボタンを設定
+            imgButtonInit();
         }
 
         //環境設定をクリック
