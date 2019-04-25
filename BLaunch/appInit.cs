@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace BLaunch
@@ -85,6 +87,73 @@ namespace BLaunch
             fileOpenButton.Image = folderImg;
             settingButton.Image = settingImg;
         }
+
+        //ファイル選択ダイアログの表示
+        private void getOpenFileName()
+        {
+            OpenFileDialog f = new OpenFileDialog();
+            f.Filter = "テキストファイル(*.txt)|*.txt";
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                filename = f.FileName;
+            }
+        }
+
+        //ファイルをロード
+        private void loadFile()
+        {
+            try
+            {
+
+                if (urlArray != null)
+                {
+                    urlArray = new ArrayList();
+                    urlCombo.Items.Clear();
+                }
+
+                string buff = File.getTextFileContent(filename);
+                string ext = File.getFileExtension(filename);
+
+                if (ext.Equals(".txt"))
+                {
+                    urlArray = File.urlListDatasFromTextFile(buff);
+                }
+                else
+                {
+                    MessageBox.Show("サポートされないファイルを開こうとしました。処理をキャンセルします！");
+                    return;
+                }
+
+                endOpen();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("処理エラーです。ファイルの内容に問題がないか確認してください！");
+            }
+
+        }
+
+        //ファイルを開いた後の処理
+        private void endOpen()
+        {
+            if (urlArray != null)
+            {
+                arrIndex = 0;
+                //コンボボックスの生成
+                for (int i = 0; i < urlArray.Count; i++)
+                {
+                    string[] inrow = (string[])urlArray[i];
+                    urlCombo.Items.Add(inrow[0].ToString());
+                }
+                //初期値の設定
+                string[] row = (string[])urlArray[0];
+                urlText.Text = row[1].ToString();
+                urlCombo.SelectedIndex = 0;
+                statusBar.Text = filename;
+            }
+        }
+
 
     }
 }

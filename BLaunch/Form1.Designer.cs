@@ -115,6 +115,7 @@
             this.fileOpenButton.Size = new System.Drawing.Size(40, 40);
             this.fileOpenButton.TabIndex = 4;
             this.fileOpenButton.UseVisualStyleBackColor = true;
+            this.fileOpenButton.Click += new System.EventHandler(this.fileOpenButton_Click);
             // 
             // prevButton
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +12,10 @@ namespace BLaunch
 {
     public partial class Form1 : Form
     {
+
+        private string filename;
+        private ArrayList urlArray;
+        private int arrIndex;
 
         public Form1()
         {
@@ -32,6 +37,15 @@ namespace BLaunch
         private void settingButton_Click(object sender, EventArgs e)
         {
             showSettingDiag();
+        }
+
+        private void fileOpenButton_Click(object sender, EventArgs e)
+        {
+            getOpenFileName();
+            if (filename != null)
+            {
+                loadFile();
+            }
         }
     }
 }
