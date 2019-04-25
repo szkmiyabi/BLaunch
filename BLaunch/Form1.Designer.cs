@@ -192,6 +192,7 @@
             this.settingButton.TabIndex = 9;
             this.settingButton.Text = "Setting";
             this.settingButton.UseVisualStyleBackColor = true;
+            this.settingButton.Click += new System.EventHandler(this.settingButton_Click);
             // 
             // Form1
             // 

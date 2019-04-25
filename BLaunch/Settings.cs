@@ -5,15 +5,12 @@ using System.Text;
 
 namespace BLaunch
 {
-    class Settings
+    public class Settings
     {
         private string _iePath;
         private string _ffPath;
         private string _gcPath;
         private string _etcBrowserPath;
-        private string _pu_tag_link_img_alt_flag;
-        private string _pu_tag_img_fname_flag;
-        private string _pu_tag_img_alt_attr_flag;
 
         public string iePath
         {

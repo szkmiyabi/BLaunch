@@ -93,6 +93,7 @@
             this.dialogOKButton.TabIndex = 0;
             this.dialogOKButton.Text = "OK";
             this.dialogOKButton.UseVisualStyleBackColor = true;
+            this.dialogOKButton.Click += new System.EventHandler(this.dialogOKButton_Click);
             // 
             // dialogCancelButton
             // 
@@ -102,6 +103,7 @@
             this.dialogCancelButton.TabIndex = 1;
             this.dialogCancelButton.Text = "キャンセル";
             this.dialogCancelButton.UseVisualStyleBackColor = true;
+            this.dialogCancelButton.Click += new System.EventHandler(this.dialogCancelButton_Click);
             // 
             // deleteSettingBtn
             // 
@@ -111,6 +113,7 @@
             this.deleteSettingBtn.TabIndex = 2;
             this.deleteSettingBtn.Text = "設定消去";
             this.deleteSettingBtn.UseVisualStyleBackColor = true;
+            this.deleteSettingBtn.Click += new System.EventHandler(this.deleteSettingBtn_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -218,6 +221,7 @@
             this.ffDefaultBtn.TabIndex = 2;
             this.ffDefaultBtn.Text = "自動取得";
             this.ffDefaultBtn.UseVisualStyleBackColor = true;
+            this.ffDefaultBtn.Click += new System.EventHandler(this.ffDefaultBtn_Click);
             // 
             // gcDefaultBtn
             // 
@@ -227,6 +231,7 @@
             this.gcDefaultBtn.TabIndex = 2;
             this.gcDefaultBtn.Text = "自動取得";
             this.gcDefaultBtn.UseVisualStyleBackColor = true;
+            this.gcDefaultBtn.Click += new System.EventHandler(this.gcDefaultBtn_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -261,6 +266,7 @@
             this.ieDefaultBtn.TabIndex = 2;
             this.ieDefaultBtn.Text = "自動取得";
             this.ieDefaultBtn.UseVisualStyleBackColor = true;
+            this.ieDefaultBtn.Click += new System.EventHandler(this.ieDefaultBtn_Click);
             // 
             // SettingsDialog
             // 

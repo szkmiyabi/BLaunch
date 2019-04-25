@@ -6,3 +6,4 @@ C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.csproj.GenerateR
 C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.exe
 C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.pdb
 C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.Form1.resources
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.SettingsDialog.resources
