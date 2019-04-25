@@ -14,6 +14,9 @@ namespace BLaunch
         public Form1()
         {
             InitializeComponent();
+            statusBar.Text = "ファイルを選択してください...";
         }
+
+
     }
 }
