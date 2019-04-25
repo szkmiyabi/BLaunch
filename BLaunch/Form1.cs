@@ -33,12 +33,72 @@ namespace BLaunch
             imgButtonInit();
         }
 
+        //前のURL
+        private void doBrowserPrev()
+        {
+            if (urlArray != null)
+            {
+                if (arrIndex == 0)
+                {
+                    return;
+                }
+                arrIndex--;
+                string[] row = (string[])urlArray[arrIndex];
+                string urlNo = row[0].ToString();
+                string urlStr = row[1].ToString();
+                urlText.Text = urlStr;
+                urlCombo.SelectedIndex = arrIndex;
+            }
+        }
+
+        //次のURL
+        private void doBrowserNext()
+        {
+            if (urlArray != null)
+            {
+                if (arrIndex == (urlArray.Count - 1))
+                {
+                    return;
+                }
+                arrIndex++;
+                string[] row = (string[])urlArray[arrIndex];
+                string urlNo = row[0].ToString();
+                string urlStr = row[1].ToString();
+                urlText.Text = urlStr;
+                urlCombo.SelectedIndex = arrIndex;
+            }
+        }
+
+        //comboで指定したURL
+        private void doBrowseByCombo()
+        {
+            try
+            {
+                string keyVal = "";
+                keyVal = urlCombo.SelectedItem.ToString();
+                int pos = urlCombo.SelectedIndex;
+                if (urlArray != null)
+                {
+                    string[] row = (string[])urlArray[pos];
+                    string urlNo = row[0].ToString();
+                    string urlStr = row[1].ToString();
+                    urlText.Text = urlStr;
+                    arrIndex = pos;
+                }
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+
         //環境設定をクリック
         private void settingButton_Click(object sender, EventArgs e)
         {
             showSettingDiag();
         }
 
+        //開くをクリック
         private void fileOpenButton_Click(object sender, EventArgs e)
         {
             getOpenFileName();
@@ -46,6 +106,24 @@ namespace BLaunch
             {
                 loadFile();
             }
+        }
+
+        //戻るをクリック
+        private void prevButton_Click(object sender, EventArgs e)
+        {
+            doBrowserPrev();
+        }
+
+        //進むをクリック
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            doBrowserNext();
+        }
+
+        //urlComboのPIDをクリック
+        private void urlCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            doBrowseByCombo();
         }
     }
 }

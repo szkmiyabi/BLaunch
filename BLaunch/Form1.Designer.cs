@@ -85,6 +85,7 @@
             this.urlCombo.Name = "urlCombo";
             this.urlCombo.Size = new System.Drawing.Size(96, 20);
             this.urlCombo.TabIndex = 0;
+            this.urlCombo.SelectedIndexChanged += new System.EventHandler(this.urlCombo_SelectedIndexChanged);
             // 
             // urlText
             // 
@@ -124,6 +125,7 @@
             this.prevButton.Size = new System.Drawing.Size(40, 40);
             this.prevButton.TabIndex = 2;
             this.prevButton.UseVisualStyleBackColor = true;
+            this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
             // 
             // nextButton
             // 
@@ -132,6 +134,7 @@
             this.nextButton.Size = new System.Drawing.Size(40, 40);
             this.nextButton.TabIndex = 3;
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // ieButton
             // 

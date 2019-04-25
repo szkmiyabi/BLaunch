@@ -154,6 +154,57 @@ namespace BLaunch
             }
         }
 
+        //IEでURLを開く
+        private void browseByIE()
+        {
+            try
+            {
+                string burl = urlText.Text;
+                System.Diagnostics.Process.Start(iePath, " " + burl);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        //FirefoxでURLを開く
+        private void browseByFirefox()
+        {
+            try
+            {
+                string burl = urlText.Text;
+                System.Diagnostics.Process.Start(ffPath, "-new-tab " + burl);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        //ChromeでURLを開く
+        private void browseByChrome()
+        {
+            try
+            {
+                string burl = urlText.Text;
+                System.Diagnostics.Process.Start(gcPath, " " + burl);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+        //任意のブラウザでURLを開く
+        private void browseByAnother()
+        {
+            try
+            {
+                string burl = urlText.Text;
+                System.Diagnostics.Process.Start(etcBrowserPath, "-new-tab " + burl);
+            }
+            catch (Exception ex)
+            {
+            }
+        }
 
     }
 }
