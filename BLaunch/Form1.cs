@@ -26,9 +26,16 @@ namespace BLaunch
         //初期化
         private void Initilalize()
         {
+            //statusBarを設定
             statusBar.Text = "ファイルを選択してください...";
+
+            //常に前面表示の設定
+            topMostCheck.Checked = true;
+            TopMost = true;
+
             //環境設定をロード
             loadAppSettings();
+
             //imageボタンを設定
             imgButtonInit();
         }
@@ -124,6 +131,36 @@ namespace BLaunch
         private void urlCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
             doBrowseByCombo();
+        }
+
+        //IEで開くをクリック
+        private void ieButton_Click(object sender, EventArgs e)
+        {
+            browseByIE();
+        }
+
+        //Firefoxで開くをクリック
+        private void ffButton_Click(object sender, EventArgs e)
+        {
+            browseByFirefox();
+        }
+
+        //Chromeで開くをクリック
+        private void gcButton_Click(object sender, EventArgs e)
+        {
+            browseByChrome();
+        }
+
+        //任意ブラウザで開くをクリック
+        private void anotherButton_Click(object sender, EventArgs e)
+        {
+            browseByAnother();
+        }
+
+        //常に前面表示チェックボックスをクリック
+        private void topMostCheck_Click(object sender, EventArgs e)
+        {
+            this.TopMost = !this.TopMost;
         }
     }
 }

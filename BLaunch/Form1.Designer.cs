@@ -44,6 +44,7 @@
             this.settingButton = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
+            this.topMostCheck = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -103,6 +104,7 @@
             this.flowLayoutPanel2.Controls.Add(this.ffButton);
             this.flowLayoutPanel2.Controls.Add(this.gcButton);
             this.flowLayoutPanel2.Controls.Add(this.anotherButton);
+            this.flowLayoutPanel2.Controls.Add(this.topMostCheck);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 56);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -143,6 +145,7 @@
             this.ieButton.Size = new System.Drawing.Size(40, 40);
             this.ieButton.TabIndex = 5;
             this.ieButton.UseVisualStyleBackColor = true;
+            this.ieButton.Click += new System.EventHandler(this.ieButton_Click);
             // 
             // ffButton
             // 
@@ -151,6 +154,7 @@
             this.ffButton.Size = new System.Drawing.Size(40, 40);
             this.ffButton.TabIndex = 6;
             this.ffButton.UseVisualStyleBackColor = true;
+            this.ffButton.Click += new System.EventHandler(this.ffButton_Click);
             // 
             // gcButton
             // 
@@ -159,6 +163,7 @@
             this.gcButton.Size = new System.Drawing.Size(40, 40);
             this.gcButton.TabIndex = 7;
             this.gcButton.UseVisualStyleBackColor = true;
+            this.gcButton.Click += new System.EventHandler(this.gcButton_Click);
             // 
             // anotherButton
             // 
@@ -167,6 +172,7 @@
             this.anotherButton.Size = new System.Drawing.Size(40, 40);
             this.anotherButton.TabIndex = 8;
             this.anotherButton.UseVisualStyleBackColor = true;
+            this.anotherButton.Click += new System.EventHandler(this.anotherButton_Click);
             // 
             // settingButton
             // 
@@ -192,6 +198,18 @@
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(0, 17);
             // 
+            // topMostCheck
+            // 
+            this.topMostCheck.AutoSize = true;
+            this.topMostCheck.Location = new System.Drawing.Point(300, 19);
+            this.topMostCheck.Margin = new System.Windows.Forms.Padding(24, 19, 3, 3);
+            this.topMostCheck.Name = "topMostCheck";
+            this.topMostCheck.Size = new System.Drawing.Size(93, 16);
+            this.topMostCheck.TabIndex = 10;
+            this.topMostCheck.Text = "常に前面表示";
+            this.topMostCheck.UseVisualStyleBackColor = true;
+            this.topMostCheck.Click += new System.EventHandler(this.topMostCheck_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -206,6 +224,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -230,6 +249,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusBar;
         private System.Windows.Forms.Button settingButton;
+        private System.Windows.Forms.CheckBox topMostCheck;
     }
 }
 
