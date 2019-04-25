@@ -1,0 +1,8 @@
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\bin\Debug\BLaunch.exe
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\bin\Debug\BLaunch.pdb
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.csprojResolveAssemblyReference.cache
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.Properties.Resources.resources
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.csproj.GenerateResource.Cache
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.exe
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.pdb
+C:\Users\szkmiyabi\vs_project\BLaunch\BLaunch\obj\Debug\BLaunch.Form1.resources
