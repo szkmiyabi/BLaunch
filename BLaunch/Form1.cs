@@ -38,6 +38,15 @@ namespace BLaunch
 
             //imageボタンを設定
             imgButtonInit();
+
+            //起動直後はコントロールを無効化
+            prevButton.Enabled = false;
+            nextButton.Enabled = false;
+            urlCombo.Enabled = false;
+
+            //ホームURLが指定されている場合はセットする
+            if (!homeUrl.Equals("")) urlText.Text = homeUrl;
+
         }
 
         //前のURL
@@ -161,6 +170,12 @@ namespace BLaunch
         private void topMostCheck_Click(object sender, EventArgs e)
         {
             this.TopMost = !this.TopMost;
+        }
+
+        //ホームURLをクリック
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            browseHomeUrl();
         }
     }
 }

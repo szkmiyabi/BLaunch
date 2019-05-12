@@ -20,6 +20,8 @@ namespace BLaunch
         private string ffPath;
         private string gcPath;
         private string etcBrowserPath;
+        private string cmdOptionStr;
+        private string homeUrl;
 
         //アプリ設定データを取得
         private void loadAppSettings()
@@ -39,6 +41,8 @@ namespace BLaunch
                 ffPath = appSettings.ffPath;
                 gcPath = appSettings.gcPath;
                 etcBrowserPath = appSettings.etcBrowserPath;
+                cmdOptionStr = appSettings.cmdOptionStr;
+                homeUrl = appSettings.homeUrl;
 
             }
             catch (Exception ex)
@@ -78,6 +82,7 @@ namespace BLaunch
             Bitmap cfxImg = getImageFromResource("cfx32.png");
             Bitmap folderImg = getImageFromResource("folder.png");
             Bitmap settingImg = getImageFromResource("setting.png");
+            Bitmap homeImg = getImageFromResource("home.png");
             prevButton.Image = prevBtnImg;
             nextButton.Image = nextBtnImg;
             ieButton.Image = ieImg;
@@ -86,6 +91,7 @@ namespace BLaunch
             anotherButton.Image = cfxImg;
             fileOpenButton.Image = folderImg;
             settingButton.Image = settingImg;
+            homeButton.Image = homeImg;
         }
 
         //ファイル選択ダイアログの表示
@@ -139,6 +145,12 @@ namespace BLaunch
         {
             if (urlArray != null)
             {
+
+                //無効化したコントロールを初期化
+                urlCombo.Enabled = true;
+                prevButton.Enabled = true;
+                nextButton.Enabled = true;
+
                 arrIndex = 0;
                 //コンボボックスの生成
                 for (int i = 0; i < urlArray.Count; i++)
@@ -199,10 +211,33 @@ namespace BLaunch
             try
             {
                 string burl = urlText.Text;
-                System.Diagnostics.Process.Start(etcBrowserPath, "-new-tab " + burl);
+                string cr_cmd_option = "";
+                if(cmdOptionStr.Equals(""))
+                {
+                    cr_cmd_option = "-new-tab ";
+                }
+                else
+                {
+                    cr_cmd_option = " " + cmdOptionStr + " " + "-new-tab ";
+                }
+                System.Diagnostics.Process.Start(etcBrowserPath, cr_cmd_option + burl);
             }
             catch (Exception ex)
             {
+            }
+        }
+
+        //ホームURLに戻る
+        private void browseHomeUrl()
+        {
+            if(homeUrl.Equals(""))
+            {
+                MessageBox.Show("ホームURLが設定されていません!");
+                return;
+            }
+            else
+            {
+                urlText.Text = homeUrl;
             }
         }
 

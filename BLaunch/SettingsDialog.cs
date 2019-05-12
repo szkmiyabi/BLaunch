@@ -33,6 +33,8 @@ namespace BLaunch
                 appSettings.ffPath = ffPathText.Text;
                 appSettings.gcPath = gcPathText.Text;
                 appSettings.etcBrowserPath = etcBrowserText.Text;
+                appSettings.cmdOptionStr = cmdOptionText.Text;
+                appSettings.homeUrl = homeUrlText.Text;
                 XmlSerializer xsz = new XmlSerializer(typeof(Settings));
                 StreamWriter sw = new StreamWriter(
                     filename,
@@ -66,6 +68,8 @@ namespace BLaunch
                 ffPathText.Text = appSettings.ffPath;
                 gcPathText.Text = appSettings.gcPath;
                 etcBrowserText.Text = appSettings.etcBrowserPath;
+                cmdOptionText.Text = appSettings.cmdOptionStr;
+                homeUrlText.Text = appSettings.homeUrl;
             }
             catch (Exception ex)
             {
@@ -81,6 +85,8 @@ namespace BLaunch
                 appSettings.ffPath = "";
                 appSettings.gcPath = "";
                 appSettings.etcBrowserPath = "";
+                appSettings.cmdOptionStr = "";
+                appSettings.homeUrl = "";
                 XmlSerializer xsz = new XmlSerializer(typeof(Settings));
                 StreamWriter sw = new StreamWriter(
                     filename,
@@ -94,6 +100,8 @@ namespace BLaunch
                 ffPathText.Text = "";
                 gcPathText.Text = "";
                 etcBrowserText.Text = "";
+                cmdOptionText.Text = "";
+                homeUrlText.Text = "";
                 MessageBox.Show("設定が削除できました。");
             }
             catch (Exception ex)

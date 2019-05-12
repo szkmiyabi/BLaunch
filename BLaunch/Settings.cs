@@ -11,6 +11,8 @@ namespace BLaunch
         private string _ffPath;
         private string _gcPath;
         private string _etcBrowserPath;
+        private string _cmdOptionStr;
+        private string _homeUrl;
 
         public string iePath
         {
@@ -32,6 +34,16 @@ namespace BLaunch
             get { return _etcBrowserPath; }
             set { _etcBrowserPath = value; }
         }
+        public string cmdOptionStr
+        {
+            get { return _cmdOptionStr; }
+            set { _cmdOptionStr = value; }
+        }
+        public string homeUrl
+        {
+            get { return _homeUrl; }
+            set { _homeUrl = value; }
+        }
 
         //コンストラクタ
         public Settings()
@@ -40,6 +52,8 @@ namespace BLaunch
             _ffPath = "";
             _gcPath = "";
             _etcBrowserPath = "";
+            _cmdOptionStr = "";
+            _homeUrl = "";
         }
     }
 }

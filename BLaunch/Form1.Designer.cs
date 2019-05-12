@@ -33,18 +33,19 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.urlCombo = new System.Windows.Forms.ComboBox();
             this.urlText = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.fileOpenButton = new System.Windows.Forms.Button();
             this.prevButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.fileOpenButton = new System.Windows.Forms.Button();
+            this.settingButton = new System.Windows.Forms.Button();
             this.ieButton = new System.Windows.Forms.Button();
             this.ffButton = new System.Windows.Forms.Button();
             this.gcButton = new System.Windows.Forms.Button();
             this.anotherButton = new System.Windows.Forms.Button();
-            this.settingButton = new System.Windows.Forms.Button();
+            this.topMostCheck = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.topMostCheck = new System.Windows.Forms.CheckBox();
+            this.homeButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -96,10 +97,29 @@
             this.urlText.Size = new System.Drawing.Size(465, 19);
             this.urlText.TabIndex = 1;
             // 
+            // prevButton
+            // 
+            this.prevButton.Location = new System.Drawing.Point(576, 3);
+            this.prevButton.Name = "prevButton";
+            this.prevButton.Size = new System.Drawing.Size(40, 40);
+            this.prevButton.TabIndex = 2;
+            this.prevButton.UseVisualStyleBackColor = true;
+            this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
+            // 
+            // nextButton
+            // 
+            this.nextButton.Location = new System.Drawing.Point(622, 3);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(40, 40);
+            this.nextButton.TabIndex = 3;
+            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.fileOpenButton);
             this.flowLayoutPanel2.Controls.Add(this.settingButton);
+            this.flowLayoutPanel2.Controls.Add(this.homeButton);
             this.flowLayoutPanel2.Controls.Add(this.ieButton);
             this.flowLayoutPanel2.Controls.Add(this.ffButton);
             this.flowLayoutPanel2.Controls.Add(this.gcButton);
@@ -120,60 +140,6 @@
             this.fileOpenButton.UseVisualStyleBackColor = true;
             this.fileOpenButton.Click += new System.EventHandler(this.fileOpenButton_Click);
             // 
-            // prevButton
-            // 
-            this.prevButton.Location = new System.Drawing.Point(576, 3);
-            this.prevButton.Name = "prevButton";
-            this.prevButton.Size = new System.Drawing.Size(40, 40);
-            this.prevButton.TabIndex = 2;
-            this.prevButton.UseVisualStyleBackColor = true;
-            this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
-            // 
-            // nextButton
-            // 
-            this.nextButton.Location = new System.Drawing.Point(622, 3);
-            this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(40, 40);
-            this.nextButton.TabIndex = 3;
-            this.nextButton.UseVisualStyleBackColor = true;
-            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
-            // 
-            // ieButton
-            // 
-            this.ieButton.Location = new System.Drawing.Point(95, 3);
-            this.ieButton.Name = "ieButton";
-            this.ieButton.Size = new System.Drawing.Size(40, 40);
-            this.ieButton.TabIndex = 5;
-            this.ieButton.UseVisualStyleBackColor = true;
-            this.ieButton.Click += new System.EventHandler(this.ieButton_Click);
-            // 
-            // ffButton
-            // 
-            this.ffButton.Location = new System.Drawing.Point(141, 3);
-            this.ffButton.Name = "ffButton";
-            this.ffButton.Size = new System.Drawing.Size(40, 40);
-            this.ffButton.TabIndex = 6;
-            this.ffButton.UseVisualStyleBackColor = true;
-            this.ffButton.Click += new System.EventHandler(this.ffButton_Click);
-            // 
-            // gcButton
-            // 
-            this.gcButton.Location = new System.Drawing.Point(187, 3);
-            this.gcButton.Name = "gcButton";
-            this.gcButton.Size = new System.Drawing.Size(40, 40);
-            this.gcButton.TabIndex = 7;
-            this.gcButton.UseVisualStyleBackColor = true;
-            this.gcButton.Click += new System.EventHandler(this.gcButton_Click);
-            // 
-            // anotherButton
-            // 
-            this.anotherButton.Location = new System.Drawing.Point(233, 3);
-            this.anotherButton.Name = "anotherButton";
-            this.anotherButton.Size = new System.Drawing.Size(40, 40);
-            this.anotherButton.TabIndex = 8;
-            this.anotherButton.UseVisualStyleBackColor = true;
-            this.anotherButton.Click += new System.EventHandler(this.anotherButton_Click);
-            // 
             // settingButton
             // 
             this.settingButton.Location = new System.Drawing.Point(49, 3);
@@ -182,6 +148,54 @@
             this.settingButton.TabIndex = 9;
             this.settingButton.UseVisualStyleBackColor = true;
             this.settingButton.Click += new System.EventHandler(this.settingButton_Click);
+            // 
+            // ieButton
+            // 
+            this.ieButton.Location = new System.Drawing.Point(141, 3);
+            this.ieButton.Name = "ieButton";
+            this.ieButton.Size = new System.Drawing.Size(40, 40);
+            this.ieButton.TabIndex = 5;
+            this.ieButton.UseVisualStyleBackColor = true;
+            this.ieButton.Click += new System.EventHandler(this.ieButton_Click);
+            // 
+            // ffButton
+            // 
+            this.ffButton.Location = new System.Drawing.Point(187, 3);
+            this.ffButton.Name = "ffButton";
+            this.ffButton.Size = new System.Drawing.Size(40, 40);
+            this.ffButton.TabIndex = 6;
+            this.ffButton.UseVisualStyleBackColor = true;
+            this.ffButton.Click += new System.EventHandler(this.ffButton_Click);
+            // 
+            // gcButton
+            // 
+            this.gcButton.Location = new System.Drawing.Point(233, 3);
+            this.gcButton.Name = "gcButton";
+            this.gcButton.Size = new System.Drawing.Size(40, 40);
+            this.gcButton.TabIndex = 7;
+            this.gcButton.UseVisualStyleBackColor = true;
+            this.gcButton.Click += new System.EventHandler(this.gcButton_Click);
+            // 
+            // anotherButton
+            // 
+            this.anotherButton.Location = new System.Drawing.Point(279, 3);
+            this.anotherButton.Name = "anotherButton";
+            this.anotherButton.Size = new System.Drawing.Size(40, 40);
+            this.anotherButton.TabIndex = 8;
+            this.anotherButton.UseVisualStyleBackColor = true;
+            this.anotherButton.Click += new System.EventHandler(this.anotherButton_Click);
+            // 
+            // topMostCheck
+            // 
+            this.topMostCheck.AutoSize = true;
+            this.topMostCheck.Location = new System.Drawing.Point(346, 19);
+            this.topMostCheck.Margin = new System.Windows.Forms.Padding(24, 19, 3, 3);
+            this.topMostCheck.Name = "topMostCheck";
+            this.topMostCheck.Size = new System.Drawing.Size(93, 16);
+            this.topMostCheck.TabIndex = 10;
+            this.topMostCheck.Text = "常に前面表示";
+            this.topMostCheck.UseVisualStyleBackColor = true;
+            this.topMostCheck.Click += new System.EventHandler(this.topMostCheck_Click);
             // 
             // statusStrip1
             // 
@@ -198,17 +212,14 @@
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(0, 17);
             // 
-            // topMostCheck
+            // homeButton
             // 
-            this.topMostCheck.AutoSize = true;
-            this.topMostCheck.Location = new System.Drawing.Point(300, 19);
-            this.topMostCheck.Margin = new System.Windows.Forms.Padding(24, 19, 3, 3);
-            this.topMostCheck.Name = "topMostCheck";
-            this.topMostCheck.Size = new System.Drawing.Size(93, 16);
-            this.topMostCheck.TabIndex = 10;
-            this.topMostCheck.Text = "常に前面表示";
-            this.topMostCheck.UseVisualStyleBackColor = true;
-            this.topMostCheck.Click += new System.EventHandler(this.topMostCheck_Click);
+            this.homeButton.Location = new System.Drawing.Point(95, 3);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(40, 40);
+            this.homeButton.TabIndex = 11;
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // Form1
             // 
@@ -250,6 +261,7 @@
         private System.Windows.Forms.ToolStripStatusLabel statusBar;
         private System.Windows.Forms.Button settingButton;
         private System.Windows.Forms.CheckBox topMostCheck;
+        private System.Windows.Forms.Button homeButton;
     }
 }
 

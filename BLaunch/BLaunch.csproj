@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bl.ico" />
+    <EmbeddedResource Include="resources\home.png" />
     <EmbeddedResource Include="resources\setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
