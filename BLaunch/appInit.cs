@@ -15,7 +15,7 @@ namespace BLaunch
     {
 
         private Settings appSettings;
-        private static string settings_filename = "settings.config";
+        private string settings_filename;
         private string iePath;
         private string ffPath;
         private string gcPath;

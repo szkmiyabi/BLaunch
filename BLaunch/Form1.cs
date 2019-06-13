@@ -33,6 +33,8 @@ namespace BLaunch
             topMostCheck.Checked = true;
             TopMost = true;
 
+            settings_filename = Application.UserAppDataPath + @"\settings.config";
+
             //環境設定をロード
             loadAppSettings();
 

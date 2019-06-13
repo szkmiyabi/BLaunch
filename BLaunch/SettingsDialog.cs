@@ -14,12 +14,13 @@ namespace BLaunch
     public partial class SettingsDialog : Form
     {
         private Settings appSettings;
-        private static string filename = "settings.config";
+        private string filename;
 
         //コンストラクタ
         public SettingsDialog()
         {
             InitializeComponent();
+            filename = Application.UserAppDataPath + @"\settings.config";
             appSettings = new Settings();
             loadSettings();
         }
