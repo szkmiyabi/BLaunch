@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Name="BLaunch" Id="1ECFE99E-1710-4928-AD51-5692BBA140DD" UpgradeCode="E946CCBA-A857-46CA-A5A5-92CE955F181B" Language="1041" Codepage="932" Version="0.0.0.1" Manufacturer="JCI-TN">
+  <Product Name="BLaunch" Id="52BFA705-F362-4775-AE2D-AE143966CCAB" UpgradeCode="34F14DBA-9F6F-4289-9C3A-C998A1B0BB12" Language="1041" Codepage="932" Version="0.0.0.1" Manufacturer="JCI-TN">
     <Package Id="*" Keywords="インストーラー" Manufacturer="JCI-TN" InstallerVersion="200" Languages="1041" Compressed="yes" SummaryCodepage="932" />
 
     <Media Id="1" Cabinet="Product.cab" EmbedCab="yes" />
@@ -10,7 +10,7 @@
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLDIR" Name="BLaunch">
 
-          <Component Id="Component1" Guid="670F16C5-011E-45E6-85FD-7867B9E14CB5">
+          <Component Id="Component1" Guid="965975B0-846A-48EE-AAF3-24E6E4018D26">
             <File Id="BLEXE" Name="BLaunch.exe" KeyPath="yes" DiskId="1" Source="..\..\BLaunch\bin\Release\BLaunch.exe">
               <Shortcut Id="startMenuBL" Directory="ProgramMenuDir" Name="BLaunch" WorkingDirectory="INSTALLDIR" Icon="BLIcon.exe" IconIndex="0" Advertise="yes" />
               <Shortcut Id="desktopBL" Directory="DesktopFolder" Name="BLaunch" WorkingDirectory="INSTALLDIR" Icon="BLIcon.exe" IconIndex="0" Advertise="yes" />
@@ -21,7 +21,7 @@
 
       <Directory Id="ProgramMenuFolder" Name="Programs">
         <Directory Id="ProgramMenuDir" Name="BLaunch">
-          <Component Id="ProgramMenuDir" Guid="17F9DF58-072C-4CF5-8D1D-5FE4D2B00C7D">
+          <Component Id="ProgramMenuDir" Guid="49B1341E-492A-4FAC-83F0-96A286879AF8">
             <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
             <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]" Type="string" Value="" KeyPath="yes" />
           </Component>
