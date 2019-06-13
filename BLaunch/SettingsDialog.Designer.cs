@@ -49,11 +49,11 @@
             this.gcDefaultBtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.etcBrowserText = new System.Windows.Forms.TextBox();
+            this.cmdOptionLabel = new System.Windows.Forms.Label();
+            this.cmdOptionText = new System.Windows.Forms.TextBox();
             this.homeUrlLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.homeUrlText = new System.Windows.Forms.TextBox();
-            this.cmdOptionLabel = new System.Windows.Forms.Label();
-            this.cmdOptionText = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -151,7 +151,8 @@
             // etcBrowserPathLabel
             // 
             this.etcBrowserPathLabel.AutoSize = true;
-            this.etcBrowserPathLabel.Location = new System.Drawing.Point(3, 110);
+            this.etcBrowserPathLabel.Location = new System.Drawing.Point(3, 118);
+            this.etcBrowserPathLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.etcBrowserPathLabel.Name = "etcBrowserPathLabel";
             this.etcBrowserPathLabel.Size = new System.Drawing.Size(108, 12);
             this.etcBrowserPathLabel.TabIndex = 0;
@@ -160,7 +161,8 @@
             // gcPathLabel
             // 
             this.gcPathLabel.AutoSize = true;
-            this.gcPathLabel.Location = new System.Drawing.Point(3, 72);
+            this.gcPathLabel.Location = new System.Drawing.Point(3, 80);
+            this.gcPathLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.gcPathLabel.Name = "gcPathLabel";
             this.gcPathLabel.Size = new System.Drawing.Size(87, 12);
             this.gcPathLabel.TabIndex = 0;
@@ -169,7 +171,8 @@
             // ffPathLabel
             // 
             this.ffPathLabel.AutoSize = true;
-            this.ffPathLabel.Location = new System.Drawing.Point(3, 35);
+            this.ffPathLabel.Location = new System.Drawing.Point(3, 43);
+            this.ffPathLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.ffPathLabel.Name = "ffPathLabel";
             this.ffPathLabel.Size = new System.Drawing.Size(84, 12);
             this.ffPathLabel.TabIndex = 0;
@@ -178,7 +181,8 @@
             // iePathLabel
             // 
             this.iePathLabel.AutoSize = true;
-            this.iePathLabel.Location = new System.Drawing.Point(3, 0);
+            this.iePathLabel.Location = new System.Drawing.Point(3, 8);
+            this.iePathLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.iePathLabel.Name = "iePathLabel";
             this.iePathLabel.Size = new System.Drawing.Size(58, 12);
             this.iePathLabel.TabIndex = 0;
@@ -283,10 +287,28 @@
             this.etcBrowserText.Size = new System.Drawing.Size(324, 19);
             this.etcBrowserText.TabIndex = 1;
             // 
+            // cmdOptionLabel
+            // 
+            this.cmdOptionLabel.AutoSize = true;
+            this.cmdOptionLabel.Location = new System.Drawing.Point(333, 8);
+            this.cmdOptionLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
+            this.cmdOptionLabel.Name = "cmdOptionLabel";
+            this.cmdOptionLabel.Size = new System.Drawing.Size(72, 12);
+            this.cmdOptionLabel.TabIndex = 2;
+            this.cmdOptionLabel.Text = "起動オプション";
+            // 
+            // cmdOptionText
+            // 
+            this.cmdOptionText.Location = new System.Drawing.Point(411, 3);
+            this.cmdOptionText.Name = "cmdOptionText";
+            this.cmdOptionText.Size = new System.Drawing.Size(129, 19);
+            this.cmdOptionText.TabIndex = 3;
+            // 
             // homeUrlLabel
             // 
             this.homeUrlLabel.AutoSize = true;
-            this.homeUrlLabel.Location = new System.Drawing.Point(3, 153);
+            this.homeUrlLabel.Location = new System.Drawing.Point(3, 161);
+            this.homeUrlLabel.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.homeUrlLabel.Name = "homeUrlLabel";
             this.homeUrlLabel.Size = new System.Drawing.Size(57, 12);
             this.homeUrlLabel.TabIndex = 5;
@@ -307,22 +329,6 @@
             this.homeUrlText.Name = "homeUrlText";
             this.homeUrlText.Size = new System.Drawing.Size(537, 19);
             this.homeUrlText.TabIndex = 0;
-            // 
-            // cmdOptionLabel
-            // 
-            this.cmdOptionLabel.AutoSize = true;
-            this.cmdOptionLabel.Location = new System.Drawing.Point(333, 0);
-            this.cmdOptionLabel.Name = "cmdOptionLabel";
-            this.cmdOptionLabel.Size = new System.Drawing.Size(72, 12);
-            this.cmdOptionLabel.TabIndex = 2;
-            this.cmdOptionLabel.Text = "起動オプション";
-            // 
-            // cmdOptionText
-            // 
-            this.cmdOptionText.Location = new System.Drawing.Point(411, 3);
-            this.cmdOptionText.Name = "cmdOptionText";
-            this.cmdOptionText.Size = new System.Drawing.Size(129, 19);
-            this.cmdOptionText.TabIndex = 3;
             // 
             // SettingsDialog
             // 

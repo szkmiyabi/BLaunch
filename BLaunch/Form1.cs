@@ -45,7 +45,7 @@ namespace BLaunch
             urlCombo.Enabled = false;
 
             //ホームURLが指定されている場合はセットする
-            if (!homeUrl.Equals("")) urlText.Text = homeUrl;
+            if (homeUrl != null) urlText.Text = homeUrl;
 
         }
 
