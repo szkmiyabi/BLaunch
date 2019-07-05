@@ -179,5 +179,22 @@ namespace BLaunch
         {
             browseHomeUrl();
         }
+
+        //ウィンドウが非アクティブの場合透明化
+        private void Form1_Deactivate(object sender, EventArgs e)
+        {
+            try
+            {
+                if (topMostCheck.Checked) this.Opacity = 0.5;
+            }
+            catch(Exception ex) {}
+        }
+
+        //ウィンドウがアクティブの場合通常表示
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            if(topMostCheck.Checked) this.Opacity = 1;
+        }
+
     }
 }

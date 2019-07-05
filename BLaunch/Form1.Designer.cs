@@ -38,6 +38,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.fileOpenButton = new System.Windows.Forms.Button();
             this.settingButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
             this.ieButton = new System.Windows.Forms.Button();
             this.ffButton = new System.Windows.Forms.Button();
             this.gcButton = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.topMostCheck = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.homeButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -149,6 +149,15 @@
             this.settingButton.UseVisualStyleBackColor = true;
             this.settingButton.Click += new System.EventHandler(this.settingButton_Click);
             // 
+            // homeButton
+            // 
+            this.homeButton.Location = new System.Drawing.Point(95, 3);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(40, 40);
+            this.homeButton.TabIndex = 11;
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
             // ieButton
             // 
             this.ieButton.Location = new System.Drawing.Point(141, 3);
@@ -212,15 +221,6 @@
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(0, 17);
             // 
-            // homeButton
-            // 
-            this.homeButton.Location = new System.Drawing.Point(95, 3);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(40, 40);
-            this.homeButton.TabIndex = 11;
-            this.homeButton.UseVisualStyleBackColor = true;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -231,6 +231,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BLaunch";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
