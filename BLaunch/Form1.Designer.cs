@@ -46,6 +46,7 @@
             this.topMostCheck = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
+            this.opacityCheck = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -125,6 +126,7 @@
             this.flowLayoutPanel2.Controls.Add(this.gcButton);
             this.flowLayoutPanel2.Controls.Add(this.anotherButton);
             this.flowLayoutPanel2.Controls.Add(this.topMostCheck);
+            this.flowLayoutPanel2.Controls.Add(this.opacityCheck);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 56);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -221,6 +223,17 @@
             this.statusBar.Name = "statusBar";
             this.statusBar.Size = new System.Drawing.Size(0, 17);
             // 
+            // opacityCheck
+            // 
+            this.opacityCheck.AutoSize = true;
+            this.opacityCheck.Location = new System.Drawing.Point(445, 19);
+            this.opacityCheck.Margin = new System.Windows.Forms.Padding(3, 19, 3, 3);
+            this.opacityCheck.Name = "opacityCheck";
+            this.opacityCheck.Size = new System.Drawing.Size(72, 16);
+            this.opacityCheck.TabIndex = 12;
+            this.opacityCheck.Text = "透過表示";
+            this.opacityCheck.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -264,6 +277,7 @@
         private System.Windows.Forms.Button settingButton;
         private System.Windows.Forms.CheckBox topMostCheck;
         private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.CheckBox opacityCheck;
     }
 }
 

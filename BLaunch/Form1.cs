@@ -33,6 +33,9 @@ namespace BLaunch
             topMostCheck.Checked = true;
             TopMost = true;
 
+            //透過表示
+            opacityCheck.Checked = true;
+
             settings_filename = Application.UserAppDataPath + @"\settings.config";
 
             //環境設定をロード
@@ -185,7 +188,7 @@ namespace BLaunch
         {
             try
             {
-                if (topMostCheck.Checked) this.Opacity = 0.5;
+                if (opacityCheck.Checked == true) this.Opacity = 0.5;
             }
             catch(Exception ex) {}
         }
@@ -193,7 +196,7 @@ namespace BLaunch
         //ウィンドウがアクティブの場合通常表示
         private void Form1_Activated(object sender, EventArgs e)
         {
-            if(topMostCheck.Checked) this.Opacity = 1;
+            if(opacityCheck.Checked == true) this.Opacity = 1;
         }
 
     }
