@@ -74,15 +74,15 @@ namespace BLaunch
         //イメージボタン初期化
         private void imgButtonInit()
         {
-            Bitmap prevBtnImg = getImageFromResource("prevbutton30.png");
-            Bitmap nextBtnImg = getImageFromResource("nextbutton30.png");
-            Bitmap ieImg = getImageFromResource("ie32.png");
-            Bitmap ffImg = getImageFromResource("ff32.png");
-            Bitmap gcImg = getImageFromResource("gc32.png");
-            Bitmap cfxImg = getImageFromResource("cfx32.png");
-            Bitmap folderImg = getImageFromResource("folder.png");
-            Bitmap settingImg = getImageFromResource("setting.png");
-            Bitmap homeImg = getImageFromResource("home.png");
+            Bitmap prevBtnImg = getImageFromResource("prevbutton24.png");
+            Bitmap nextBtnImg = getImageFromResource("nextbutton24.png");
+            Bitmap ieImg = getImageFromResource("ie24.png");
+            Bitmap ffImg = getImageFromResource("ff24.png");
+            Bitmap gcImg = getImageFromResource("gc24.png");
+            Bitmap cfxImg = getImageFromResource("cfx24.png");
+            Bitmap folderImg = getImageFromResource("folder24.png");
+            Bitmap settingImg = getImageFromResource("setting24.png");
+            Bitmap homeImg = getImageFromResource("home24.png");
             prevButton.Image = prevBtnImg;
             nextButton.Image = nextBtnImg;
             ieButton.Image = ieImg;

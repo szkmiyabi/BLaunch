@@ -91,20 +91,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="resources\folder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="resources\cfx32.png" />
-    <EmbeddedResource Include="resources\ff32.png" />
-    <EmbeddedResource Include="resources\gc32.png" />
-    <EmbeddedResource Include="resources\ie32.png" />
-    <EmbeddedResource Include="resources\nextbutton30.png" />
-    <EmbeddedResource Include="resources\prevbutton30.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="bl.ico" />
-    <EmbeddedResource Include="resources\home.png" />
-    <EmbeddedResource Include="resources\setting.png" />
+    <EmbeddedResource Include="resources\cfx24.png" />
+    <EmbeddedResource Include="resources\ff24.png" />
+    <EmbeddedResource Include="resources\folder24.png" />
+    <EmbeddedResource Include="resources\gc24.png" />
+    <EmbeddedResource Include="resources\home24.png" />
+    <EmbeddedResource Include="resources\ie24.png" />
+    <EmbeddedResource Include="resources\nextbutton24.png" />
+    <EmbeddedResource Include="resources\prevbutton24.png" />
+    <EmbeddedResource Include="resources\setting24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
