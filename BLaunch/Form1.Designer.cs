@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.urlCombo = new System.Windows.Forms.ComboBox();
-            this.urlText = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.fileOpenButton = new System.Windows.Forms.Button();
             this.settingButton = new System.Windows.Forms.Button();
@@ -45,11 +42,14 @@
             this.anotherButton = new System.Windows.Forms.Button();
             this.topMostCheck = new System.Windows.Forms.CheckBox();
             this.opacityCheck = new System.Windows.Forms.CheckBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.urlText = new System.Windows.Forms.TextBox();
+            this.urlCombo = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusBar = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,42 +57,16 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.95146F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.04855F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(558, 93);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.75904F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.24096F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(581, 83);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.urlCombo);
-            this.flowLayoutPanel1.Controls.Add(this.urlText);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(552, 26);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // urlCombo
-            // 
-            this.urlCombo.FormattingEnabled = true;
-            this.urlCombo.Location = new System.Drawing.Point(3, 3);
-            this.urlCombo.Name = "urlCombo";
-            this.urlCombo.Size = new System.Drawing.Size(96, 20);
-            this.urlCombo.TabIndex = 0;
-            this.urlCombo.SelectedIndexChanged += new System.EventHandler(this.urlCombo_SelectedIndexChanged);
-            // 
-            // urlText
-            // 
-            this.urlText.Location = new System.Drawing.Point(105, 3);
-            this.urlText.Name = "urlText";
-            this.urlText.Size = new System.Drawing.Size(440, 19);
-            this.urlText.TabIndex = 1;
             // 
             // flowLayoutPanel2
             // 
@@ -107,7 +81,7 @@
             this.flowLayoutPanel2.Controls.Add(this.anotherButton);
             this.flowLayoutPanel2.Controls.Add(this.topMostCheck);
             this.flowLayoutPanel2.Controls.Add(this.opacityCheck);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 35);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 36);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(552, 40);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -225,13 +199,46 @@
             this.opacityCheck.Text = "透過表示";
             this.opacityCheck.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.urlText, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.urlCombo, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(575, 27);
+            this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // urlText
+            // 
+            this.urlText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.urlText.Location = new System.Drawing.Point(132, 3);
+            this.urlText.Name = "urlText";
+            this.urlText.Size = new System.Drawing.Size(440, 19);
+            this.urlText.TabIndex = 1;
+            // 
+            // urlCombo
+            // 
+            this.urlCombo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.urlCombo.FormattingEnabled = true;
+            this.urlCombo.Location = new System.Drawing.Point(3, 3);
+            this.urlCombo.Name = "urlCombo";
+            this.urlCombo.Size = new System.Drawing.Size(123, 20);
+            this.urlCombo.TabIndex = 0;
+            this.urlCombo.SelectedIndexChanged += new System.EventHandler(this.urlCombo_SelectedIndexChanged);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 71);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 84);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(558, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(581, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -244,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 93);
+            this.ClientSize = new System.Drawing.Size(581, 106);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -253,10 +260,10 @@
             this.Activated += new System.EventHandler(this.Form1_Activated);
             this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -267,7 +274,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ComboBox urlCombo;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button fileOpenButton;
@@ -284,6 +290,7 @@
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.CheckBox opacityCheck;
         public System.Windows.Forms.TextBox urlText;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
 
