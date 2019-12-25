@@ -203,8 +203,9 @@ namespace BLaunch
         private void dialogOKButton_Click(object sender, EventArgs e)
         {
             saveSettings();
+            //親フォームのURL欄にも反映
+            Form1.frmObj.urlText.Text = appSettings.homeUrl;
             Close();
-
         }
 
         private void dialogCancelButton_Click(object sender, EventArgs e)

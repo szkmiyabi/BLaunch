@@ -33,12 +33,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.urlCombo = new System.Windows.Forms.ComboBox();
             this.urlText = new System.Windows.Forms.TextBox();
-            this.prevButton = new System.Windows.Forms.Button();
-            this.nextButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.fileOpenButton = new System.Windows.Forms.Button();
             this.settingButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
+            this.prevButton = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
             this.ieButton = new System.Windows.Forms.Button();
             this.ffButton = new System.Windows.Forms.Button();
             this.gcButton = new System.Windows.Forms.Button();
@@ -94,26 +94,6 @@
             this.urlText.Size = new System.Drawing.Size(440, 19);
             this.urlText.TabIndex = 1;
             // 
-            // prevButton
-            // 
-            this.prevButton.Location = new System.Drawing.Point(111, 3);
-            this.prevButton.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
-            this.prevButton.Name = "prevButton";
-            this.prevButton.Size = new System.Drawing.Size(32, 32);
-            this.prevButton.TabIndex = 2;
-            this.prevButton.UseVisualStyleBackColor = true;
-            this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
-            // 
-            // nextButton
-            // 
-            this.nextButton.Location = new System.Drawing.Point(147, 3);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(3, 3, 9, 3);
-            this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(32, 32);
-            this.nextButton.TabIndex = 3;
-            this.nextButton.UseVisualStyleBackColor = true;
-            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
-            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.fileOpenButton);
@@ -161,6 +141,26 @@
             this.homeButton.TabIndex = 11;
             this.homeButton.UseVisualStyleBackColor = true;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
+            // prevButton
+            // 
+            this.prevButton.Location = new System.Drawing.Point(111, 3);
+            this.prevButton.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
+            this.prevButton.Name = "prevButton";
+            this.prevButton.Size = new System.Drawing.Size(32, 32);
+            this.prevButton.TabIndex = 2;
+            this.prevButton.UseVisualStyleBackColor = true;
+            this.prevButton.Click += new System.EventHandler(this.prevButton_Click);
+            // 
+            // nextButton
+            // 
+            this.nextButton.Location = new System.Drawing.Point(147, 3);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(3, 3, 9, 3);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(32, 32);
+            this.nextButton.TabIndex = 3;
+            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // ieButton
             // 
@@ -269,7 +269,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.ComboBox urlCombo;
-        private System.Windows.Forms.TextBox urlText;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button fileOpenButton;
         private System.Windows.Forms.Button prevButton;
@@ -284,6 +283,7 @@
         private System.Windows.Forms.CheckBox topMostCheck;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.CheckBox opacityCheck;
+        public System.Windows.Forms.TextBox urlText;
     }
 }
 

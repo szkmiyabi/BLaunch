@@ -17,10 +17,21 @@ namespace BLaunch
         private ArrayList urlArray;
         private int arrIndex;
 
+        //Form1自身を保持するインスタンス変数
+        private static Form1 _frmObj;
+
         public Form1()
         {
             InitializeComponent();
             Initilalize();
+            _frmObj = this;
+        }
+
+        //Form1インスタンスのゲッターとセッター
+        public static Form1 frmObj
+        {
+            get { return _frmObj; }
+            set { _frmObj = value; }
         }
 
         //初期化
