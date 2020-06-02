@@ -61,7 +61,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.75904F));
@@ -83,7 +83,7 @@
             this.flowLayoutPanel2.Controls.Add(this.topMostCheck);
             this.flowLayoutPanel2.Controls.Add(this.opacityCheck);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(4, 53);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(920, 60);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -212,7 +212,7 @@
             this.tableLayoutPanel2.Controls.Add(this.urlCombo, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -223,7 +223,7 @@
             // 
             this.urlText.Dock = System.Windows.Forms.DockStyle.Fill;
             this.urlText.Location = new System.Drawing.Point(218, 4);
-            this.urlText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.urlText.Margin = new System.Windows.Forms.Padding(4);
             this.urlText.Name = "urlText";
             this.urlText.Size = new System.Drawing.Size(738, 25);
             this.urlText.TabIndex = 1;
@@ -233,7 +233,7 @@
             this.urlCombo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.urlCombo.FormattingEnabled = true;
             this.urlCombo.Location = new System.Drawing.Point(4, 4);
-            this.urlCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.urlCombo.Margin = new System.Windows.Forms.Padding(4);
             this.urlCombo.Name = "urlCombo";
             this.urlCombo.Size = new System.Drawing.Size(206, 26);
             this.urlCombo.TabIndex = 0;
@@ -244,17 +244,17 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 137);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 131);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 22, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(968, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(968, 28);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // statusBar
             // 
             this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(0, 15);
+            this.statusBar.Size = new System.Drawing.Size(0, 21);
             // 
             // Form1
             // 
@@ -264,7 +264,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "BLaunch";
             this.Activated += new System.EventHandler(this.Form1_Activated);

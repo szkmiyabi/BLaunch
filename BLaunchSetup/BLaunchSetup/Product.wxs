@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Name="BLaunch" Id="52BFA705-F362-4775-AE2D-AE143966CCAB" UpgradeCode="34F14DBA-9F6F-4289-9C3A-C998A1B0BB12" Language="1041" Codepage="932" Version="0.0.0.5" Manufacturer="JCI-TN">
+  <Product Name="BLaunch" Id="52BFA705-F362-4775-AE2D-AE143966CCAB" UpgradeCode="34F14DBA-9F6F-4289-9C3A-C998A1B0BB12" Language="1041" Codepage="932" Version="0.0.0.6" Manufacturer="JCI-TN">
     <Package Id="*" Keywords="インストーラー" Manufacturer="JCI-TN" InstallerVersion="200" Languages="1041" Compressed="yes" SummaryCodepage="932" />
 
     <Media Id="1" Cabinet="Product.cab" EmbedCab="yes" />
